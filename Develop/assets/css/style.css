@@ -5,30 +5,32 @@
     margin: 0;
 }
 
+/* backgrond color for the whole page and white color to all body elements*/
 body {
     background-color: #d9dcd6;
-}
-
-/*style for the whole header section*/
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
     color: #ffffff;
 }
 
+/*style for the whole header section*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+}
+
 /* size of the letters and how will display, in this case in same line */
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/*this change specificly the class seo inside h1 inside the header class */
-.header h1 .seo {
+/*this change specificly the class seo */
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
+/*styling for the nav sectin */
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -37,22 +39,23 @@ body {
 }
 
 /*this is used to avoid the bullets on the list elements */
-.header div ul {
+nav ul {
     list-style-type: none;
 }
 
 /* to organize items in same line with a little margin*/
-.header div ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
 /*used to avoid the link look on the anchor tags*/
 a {
-    color: #ffffff;
     text-decoration: none;
+    color: #ffffff;
 }
 
+/*define the font size for paragraph elements*/
 p {
     font-size: 16px;
 }
@@ -98,7 +101,6 @@ p {
 /* added one different class which all uses instead of multiple repetitive classes*/
 .benefit{
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
 .benefit h3 {
@@ -112,19 +114,21 @@ p {
     max-width: 150px;
 }
 
+/* gives styles to elements with main-content class*/
 .main-content{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
 }
 
+/* defines the max height the image inside elements with main-content classes have*/
 .main-content img{
     max-height: 200px;
 }
 
+/* gives a margin and a font size to h2 elements inside elements with main-content class*/
 .main-content h2{
     margin-bottom: 20px;
     font-size: 36px;
@@ -235,7 +239,7 @@ p {
 */
 
 /* decided to hide the footer since i cannot see it in the mockup */
-.footer {
+footer {
     display: none;
     padding: 30px;
     clear: both;
@@ -243,6 +247,6 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
